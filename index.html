@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apresentação Estratégica — Sua Cozinha Lucrativa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              poppins: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'background': '#0A102F',
+              'card': '#161C34',
+              'accent-gold': '#F59E0B',
+              'accent-blue': '#00D1FF',
+              'text-primary': '#F2F2F2',
+              'text-secondary': '#A0AEC0',
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': {
+                  opacity: '0',
+                  transform: 'translateY(20px)'
+                },
+                '100%': {
+                  opacity: '1',
+                  transform: 'translateY(0)'
+                },
+              },
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<style>
+  body {
+    background-color: #0A102F; /* Fallback color */
+    background-image: linear-gradient(rgba(10, 16, 47, 0.92), rgba(10, 16, 47, 0.92)), url('https://static.wixstatic.com/media/1f17f3_600b763e689f4e67ae53b10d1d31b04e~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Makes the background stay in place while scrolling */
+  }
+</style>
+</head>
+  <body class="bg-background text-text-primary antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
