@@ -221,6 +221,43 @@ export const sectionsData: Section[] = [
     ]
   },
   {
+    id: 'investimento',
+    title: 'Investimento Inteligente',
+    type: 'pricing',
+    pricingNotes: [
+        'Contrato minimo de 3 meses',
+        'Contrato de 6 meses = 10% de desconto'
+    ],
+    pricingPlans: [
+        {
+            name: 'PLANO EDGE',
+            price: 'R$ 1097,00',
+            features: [
+                'Gestão de tráfego pago até R$ 5.000/mês',
+                'Criação e estruturação de campanhas no Google Ads e Meta Ads',
+                'Monitoramento e ajustes nas campanhas',
+                'Relatório mensal com análise dos resultados',
+                'Suporte via WhatsApp e e-mail em horário comercial'
+            ]
+        },
+        {
+            name: 'PLANO SCALE',
+            price: 'R$ 1597,00',
+            features: [
+                'Gestão de tráfego pago até R$ 8.000/mês',
+                'Criação e estruturação de campanhas no Google Ads e Meta Ads',
+                'Monitoramento e ajustes nas campanhas',
+                'Relatórios quinzenais com dados e insights práticos',
+                'Reuniões quinzenais de acompanhamento e alinhamento estratégico',
+                'Suporte via WhatsApp e e-mail em horário comercial',
+                '1x Consultoria mensal de posicionamento',
+                'Orientação Estratégica de atendimentos no WhatsApp'
+            ],
+            highlight: true
+        }
+    ]
+  },
+  {
     id: 'nossa-parceria',
     title: 'Nosso Compromisso com Você',
     type: 'default',

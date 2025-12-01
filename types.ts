@@ -1,6 +1,6 @@
 import React from "react";
 
-export type SectionType = 'default' | 'grid' | 'timeline' | 'card-highlight' | 'journey';
+export type SectionType = 'default' | 'grid' | 'timeline' | 'card-highlight' | 'journey' | 'pricing';
 
 export interface TimelineItem {
   phase: string;
@@ -41,6 +41,12 @@ export interface JourneyStep {
   objective: JourneySubStep;
 }
 
+export interface PricingPlan {
+  name: string;
+  price: string;
+  features: string[];
+  highlight?: boolean;
+}
 
 export interface Section {
   id: string;
@@ -52,4 +58,6 @@ export interface Section {
   headers?: string[];
   rows?: string[][];
   timelineItems?: TimelineItem[];
+  pricingPlans?: PricingPlan[];
+  pricingNotes?: string[];
 }
